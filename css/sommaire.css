@@ -1,0 +1,77 @@
+/* L'étape des quatre temps presente les idées principaux du site */
+#quatrestemps{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+.box{
+    width: 400px;
+}
+.box:nth-child(2),.box:nth-child(4){
+    margin-left: 20px;
+}
+#quatrestemps figure{
+    padding: 10px 0 10px 0;   
+}
+#quatrestemps figure img{
+    border: 1px solid transparent;
+    border-radius: 150px;
+    box-shadow: 1px 1px 5px #b3b1b185;
+    object-fit: cover;
+}
+/* bouton adherer */
+#adhere_btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+#adhere_btn button{
+    color: rgb(20 24 24);
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 24px;
+}
+#adhere_btn button:hover{
+background-color: rgb(10,154,154);
+color: white;
+transition: ease-in-out 0.3s;
+}
+
+#adhere_btn button i{
+    padding-left: 5px;
+}
+
+
+/* presentation networks #nets*/
+#nets{
+    padding-top: 15px;
+}
+#net{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#net_txt{
+    display: grid;
+    grid-template-columns: 1fr 65px;
+    margin: 10px;
+}
+#net_txt p:nth-child(1){
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px 0px 0px 5px;
+}
+#net_txt p:nth-child(2){
+    background-color: rgb(10,154,154);
+    padding: 10px;
+    color: white;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+}
+#net figure{
+    text-align: center;
+}
+
+

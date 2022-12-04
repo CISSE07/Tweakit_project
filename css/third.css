@@ -1,0 +1,312 @@
+/* PAGE FORUM */
+#for_hum{
+    padding: 25px 0;
+    display: grid;
+    justify-content: center;
+}
+#for_hum fieldset{
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #bdbbbb;
+    border-radius: 5px; 
+}
+#for_hum fieldset legend{
+    padding: 0 10px;
+}
+#for_hum fieldset select{
+    background-color: rgb(233 233 233 / 75%);
+    border: none;
+    padding: 5px;
+}
+
+/* avatar page forum */
+#npostAvatar{
+    margin-top: 15px;
+}
+/* bouton page forum fielset */
+fieldset  button{
+    display: inline-flex;
+    border: none;
+    background-color: rgb(10, 154, 154) ;
+    border-radius: 8px;
+    padding: 7px;
+     margin-top: 15px;
+}
+
+/* Article forum #presForum */
+
+#articleForum{
+    background-color: #fff;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#articleForum i{
+    color: rgb(20 24 24);
+}
+
+/* section #forumInspiration */
+
+#forumInspiration{
+    padding: 10px;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}
+#forumInspiration div:last-of-type li:hover{
+    color: rgb(10, 154, 154);
+    cursor: pointer;
+}
+/* image dans la section forumInspiration */
+#forumInspiration img{
+    width: 205px;
+    height: 265px;
+    object-fit: cover;
+    border: 10px solid #000000;
+    cursor: pointer;
+}
+#forumInspiration img:hover{
+    border: 10px solid #000000;
+    box-shadow: 3px 2px 22px grey;
+}
+#forumInspiration .amtrBox{
+    width: 260px;
+}
+
+#forumInspiration > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#forumInspiration > div:nth-of-type(2), #forumInspiration > div:first-of-type{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #bdbbbb;
+}
+#forumInspiration > div:last-of-type{
+    display: flex;
+    justify-content: center;
+}
+
+/* la boxe .amtrBox me permet de pouvoir faire un effet au hover sur les image */
+
+.amtrBox .lastPost_icon{
+    display: none;
+}
+.amtrBox:hover{
+    transition: 0.5s ease-in-out;
+    position: relative;
+}
+.amtrBox:hover figure{
+    filter: blur(2px);
+}
+
+.amtrBox:hover .lastPost_icon{
+    left: 70px;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: -170px;
+    font-size: xx-large;
+    cursor: pointer;
+}
+.amtrBox:hover .lastPost_icon ul{
+    align-items: center;
+}
+/* ********************CONTACT******************** */
+/* style de la page de contact */
+#Contact{
+    margin-top: 20px;
+}
+h2{
+    font-weight: 400;
+}
+.secondTitre{
+    color: rgb(139, 139, 139);
+}
+
+/* formulaire */
+#formulaire{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 198px;
+}
+.form{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.formlr{
+    padding: 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ebebeb;
+}
+.formlr:focus{
+    color: rgb(10, 154, 154);
+}
+
+#checkbox{
+    padding: 10px;
+}
+#formulaire button{
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 7px;
+    border: none;
+    background-color: rgb(10, 154, 154) ;
+    border-radius: 8px;
+    color: black;
+}
+button:hover{
+    background-color: rgb(5, 61, 61);
+    color: white;
+    cursor: pointer;
+}
+
+/*********************************** Page networks **************************** */
+
+/* section profil de l'utilisateur */
+
+#profilColumn{
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+}
+#profilColumn input{
+    padding: 7px 10px;
+    border: transparent;
+    margin-top: 8px;
+    background-color: rgb(10, 154, 154);
+    color: #fff;
+}
+#profilColumn input:hover{
+    background-color: rgb(5, 61, 61);
+}
+#netProfilIcons ul{
+    justify-content: center;
+    padding-top: 15px;
+}
+#netProfilIcons ul li{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#netProfilIcons ul li:hover{
+    cursor: pointer;
+    color: rgb(10, 154, 154);
+}
+
+/* section réseau du profil */
+
+#networksPost {
+    margin-top: 45px;
+}
+#networksPost ul{
+    justify-content: center;
+    border-bottom: 1px solid #80808045;
+    padding-bottom: 13px;
+    margin: 0;
+}
+#networksPost ul li:hover{
+    color: rgb(10, 154, 154);
+    cursor: pointer;
+}
+#networksPost figure{
+    text-align: center;
+    padding: 15px;
+    height: 285px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* section concours */
+#concours{
+    text-align: -webkit-center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#concours p{
+    padding: 15px 5px 15px 5px;
+}
+
+/* tableau */
+#concours table{
+    text-align: center;
+    box-shadow: 1px 0px 10px rgb(189, 189, 189);
+}
+#concours td{
+    border: 1px solid rgb(96, 96, 96);
+}
+
+#concours thead {
+    background-color: rgb(10, 154, 154);
+    color: #fff;
+}
+
+#concours th, td {
+    padding: 20px;
+}
+
+
+/* media responsive */
+/* responsive a partir de 1060px */
+@media screen and (min-width:1060px) {
+    /* modif pour la page forum */
+    #forumInspiration > div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 1000px;
+        margin-top: 20px;
+    }
+
+    #forumInspiration .amtrBox {
+        width: 300px;
+    }
+.amtrBox:hover .lastPost_icon{
+    left: 95px;
+}
+}
+
+/* responsive a partir de 900px */
+@media screen and (min-width:768px) {
+/* modif pour la page networks  */
+    main{
+        display: grid;
+        grid-template-columns: 250px 1fr;
+    }
+    #networkProfil{
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: -3;
+    }
+    #netProfilIcons ul{
+        flex-direction: column;
+        height: 200px;
+        justify-content: space-evenly;
+        align-items: baseline;
+        cursor: pointer;    }
+    #networksPost {
+        margin-top: 15px;
+    }
+    #concours{
+        display: grid;
+        grid-column-start: 2;
+        justify-content: center;
+    }
+}

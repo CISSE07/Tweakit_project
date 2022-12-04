@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forum Tweakit</title>
+    <!-- import -->
+    <link rel="shortcut icon" href="../image/tkt.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+</head>
+<body>
+    <!-- header avec le titre et les listes -->
+    <header>
+        <nav>
+            <h1><a href="../index.html">Tweakit</a></h1>
+            <div class="list">
+                <ul>
+                    <li><a href="../html/Networks.html">Networks</a></li>
+                    <li><a href="../html/pageforum.html">Forum</a></li>
+                    <li><a href="../html/contact.html">Contact</a></li>
+                </ul>
+            </div> 
+        </nav>
+    </header>
+
+    <!-- la section for_hum permet de pouvoir publier un article et de voir les derniers articles -->
+    <section id="for_hum">
+        <!-- 'formulaire' de publication -->
+        <form action="#">
+            <fieldset>
+                <legend>Forum</legend>
+                    <select name="viewPost" id="viewPost">
+                         <option value="Amis uniquement">Amis uniquement</option>
+                         <option value="Tout le monde">Tout le monde</option>
+                         <option value="les personnes que vous mentionner">Personnes mentionner</option>
+                    </select>
+                    <figure id="npostAvatar">
+                        <img src="../image/avatar.png" alt="avatar du profil de l'utilisateur">
+                    </figure>
+
+                    <div>
+                        <div id="npostText">
+                            <textarea name="postText" id="postText" cols="30" rows="5" placeholder="Quoi de neuf ?"></textarea>
+                        </div>
+                        <div id="npostIcon">
+                            <div id="listeIcons">
+                                <ul>
+                                    <li title="galerie"><iconify-icon icon="clarity:image-line"></iconify-icon></li>
+                                    <li title="gip"><iconify-icon icon="material-symbols:gif-box-sharp"></iconify-icon></li>
+                                    <li title="sondage"><iconify-icon icon="iconoir:stats-report"></iconify-icon></li>
+                                    <li title="smiley"><iconify-icon icon="ph:smiley-sticker-thin"></iconify-icon></li>
+                                    <li title="programme une alerte"><iconify-icon icon="vaadin:calendar-clock"></iconify-icon></li>
+                                    <li title="lieu"><iconify-icon icon="material-symbols:location-on-outline-rounded"></iconify-icon></li>
+                                </ul>
+                            </div>
+                            <div class="btn_icn">
+                                <button type="submit">Publier</button>
+                            </div>
+                        </div>
+                    </div>        
+            </fieldset>
+        </form>        
+    </section>
+
+<!-- section des premiers post sur le forum -->
+    <section id="articleForum">
+        <!-- POST Sanji -->
+        <article class="post">
+            <div class="attrib_content">
+                <div class="post_content">
+                    <figure>
+                        <a href="#"><i class="fa-solid fa-user"></i></a>
+                    </figure>
+                </div>
+                <div class="post_details">
+                    <p>Furtado D. Jezz</p> <span>.</span>
+                    <time datetime="25/11/2022 15:08:41" title="25/11/2022 15:08:41">1J</time>
+                </div>
+            </div>
+            <div class="post_mess">
+                <p>
+                    Surnommé "Mr Prince", celui-ci occupe une place essentielle dans l'équipage du prochain Roi des Pirates. Non seulement cuisinier, Sanji s'avère très puissant au point d'être le deuxième commandant suivant de près l'évolution de son rival Roronoa Zoro. Mais alors ? Quel sera le niveau final de Sanji en cette fin d'œuvre qui s'annonce apocalyptique avec la venue d'une nouvelle bataille les opposant au Gouvernement Mondial ? C'est ce dont nous allons parler. Que ce soit ses potentiels adversaires, power up ou encore puissance, Sanji réservera du lourd pour la suite du manga. 
+                </p>
+                <figure>
+                    <img src="../image/sanji.jpeg" alt="sanji vinsmok">
+                </figure>
+                 <!-- icones en bas de poste -->
+            <div class="icon_post">
+                <ul>
+                    <li title="partager"><iconify-icon icon="ph:share-network-thin"></iconify-icon></li>
+                    <li title="aime"><iconify-icon icon="ph:heart-straight-thin"></iconify-icon></li>
+                    <li title="Commentaire"><iconify-icon icon="mdi:message-badge-outline"></iconify-icon></li>
+                    <li title="Message Privée"><iconify-icon icon="mdi:message-lock-outline"></iconify-icon></li>
+                </ul>
+            </div>
+            </div>
+        </article>
+        <!-- POST ATTAQUE DES TITANTS -->
+        <article class="post">
+            <div class="attrib_content">
+                <div class="post_content">
+                    <figure>
+                        <a href="#"><i class="fa-solid fa-user"></i></a>
+                    </figure>
+                </div>
+                <div class="post_details">
+                    <p>Furtado D. Jezz</p> <span>.</span>
+                    <time datetime="25/11/2022 15:08:41" title="25/11/2022 15:08:41">1J</time>
+                </div>
+            </div>
+            <div class="post_mess">
+                <p>
+                    Refusé pour ses “dessins hideux”, L'Attaque des Titans a conquis le monde.
+                   <br> une publication de nico<a href="https://actualitte.com/article/99784/economie/refuse-pour-ses-dessins-hideux-l-attaque-des-titans-a-conquis-le-monde">....</a>
+                </p>
+                <figure>
+                    <img src="../image/snk.jpg" alt="sanji vinsmok">
+                </figure>
+            </div>
+             <!-- icones en bas de poste -->
+             <div class="icon_post">
+                <ul>
+                    <li title="partager"><iconify-icon icon="ph:share-network-thin"></iconify-icon></li>
+                    <li title="aime"><iconify-icon icon="ph:heart-straight-thin"></iconify-icon></li>
+                    <li title="Commentaire"><iconify-icon icon="mdi:message-badge-outline"></iconify-icon></li>
+                    <li title="Message Privée"><iconify-icon icon="mdi:message-lock-outline"></iconify-icon></li>
+                </ul>
+            </div>
+        </article>
+        <!--  -->
+        <article class="post">
+            <div class="attrib_content">
+                <div class="post_content">
+                    <figure>
+                        <a href="#"><i class="fa-solid fa-user"></i></a>
+                    </figure>
+                </div>
+                <div class="post_details">
+                    <p>Furtado D. Jezz</p> <span>.</span>
+                    <time datetime="25/11/2022 15:08:41" title="25/11/2022 15:08:41">1J</time>
+                </div>
+            </div>
+            <div class="post_mess">
+                <p>
+                    Hello. :) <pre></pre>
+                    Je m'appelle Assab et j'ai 18 ans, d'origine russe et je dessine depuis que je suis tout petit. Ca fait longtemps que j'ai hésité à m'inscrire sur CFSL (que je connaissais déjà grâce à mon frère hubah ou abrek ici pour ceux qui reconnaissent) et c'est désormais chose faite. <pre></pre>
+                    
+                    Je présenterai ici toutes les recherches graphiques (dessins, croquis, etc) que je ferai à l'avenir. Mon objectif est de progresser en dessin. Généralement je dessine ce qui me vient en tête sans me fixer des thèmes précis, tout se fait sur le feeling et selon l'humeur. Voilà tout, à bientôt 
+                </p>
+            </div>
+            <!-- icones en bas de poste -->
+            <div class="icon_post">
+                <ul>
+                    <li title="partager"><iconify-icon icon="ph:share-network-thin"></iconify-icon></li>
+                    <li title="aime"><iconify-icon icon="ph:heart-straight-thin"></iconify-icon></li>
+                    <li title="Commentaire"><iconify-icon icon="mdi:message-badge-outline"></iconify-icon></li>
+                    <li title="Message Privée"><iconify-icon icon="mdi:message-lock-outline"></iconify-icon></li>
+                </ul>
+            </div>
+        </article>
+    </section>
+
+    <!-- section inspiration -->
+    <section id="forumInspiration">
+        <h2>News</h2>
+<!-- 1ere division de page, la partie inspiration regroupe des nouelles oeuvres que les utilisateurs ont récemment publier -->
+        <h3> Publier durant les derniers 24h</h3>
+        <div>
+            <div class="amtrBox">
+                <figure>
+                    <img src="../image/amt1.jpg" alt="dessin amateur Mangakas">
+                </figure>
+                <div class="lastPost_icon">
+                    <ul>
+                        <li titre="aime"><iconify-icon icon="ph:heart-straight-thin"></iconify-icon></li>
+                        <li titre="tickets"><iconify-icon icon="mdi:star-three-points-outline"></iconify-icon></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="amtrBox">
+                <figure>
+                    <img src="../image/amt2.jpg" alt="dessin amateur Mangakas">
+                </figure>
+                <div class="lastPost_icon">
+                    <ul>
+                        <li><iconify-icon icon="ph:heart-straight-thin"></iconify-icon></li>
+                        <li><iconify-icon icon="mdi:star-three-points-outline"></iconify-icon></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="amtrBox">
+                <figure>
+                    <img src="../image/amt3.jpg" alt="dessin amateur Mangakas">
+                </figure>
+                <div class="lastPost_icon">
+                    <ul>
+                        <li><iconify-icon icon="ph:heart-straight-thin"></iconify-icon></li>
+                        <li><iconify-icon icon="mdi:star-three-points-outline"></iconify-icon></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="amtrBox">
+                <figure>
+                    <img src="../image/amt4.jpg" alt="dessin amateur Mangakas">
+                </figure>
+                <div class="lastPost_icon">
+                    <ul>
+                        <li><iconify-icon icon="ph:heart-straight-thin"></iconify-icon></li>
+                        <li><iconify-icon icon="mdi:star-three-points-outline"></iconify-icon></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="amtrBox">
+                <figure>
+                    <img src="../image/amt5.jpg" alt="dessin amateur Mangakas">
+                </figure>
+                <div class="lastPost_icon">
+                    <ul>
+                        <li><iconify-icon icon="ph:heart-straight-thin"></iconify-icon></li>
+                        <li><iconify-icon icon="mdi:star-three-points-outline"></iconify-icon></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="amtrBox">
+                <figure>
+                    <img src="../image/amt6.jpg" alt="dessin amateur Mangakas">
+                </figure>
+                <div class="lastPost_icon">
+                    <ul>
+                        <li><iconify-icon icon="ph:heart-straight-thin"></iconify-icon></li>
+                        <li><iconify-icon icon="mdi:star-three-points-outline"></iconify-icon></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- deuxieme range inspiration -->
+        <div>
+            <div class="amtrBox">
+                <figure>
+                    <img src="../image/amt1.jpg" alt="dessin amateur Mangakas">
+                </figure>
+                <div class="lastPost_icon">
+                    <ul>
+                        <li titre="aime"><iconify-icon icon="ph:heart-straight-thin"></iconify-icon></li>
+                        <li titre="tickets"><iconify-icon icon="mdi:star-three-points-outline"></iconify-icon></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="amtrBox">
+                <figure>
+                    <img src="../image/amt2.jpg" alt="dessin amateur Mangakas">
+                </figure>
+                <div class="lastPost_icon">
+                    <ul>
+                        <li><iconify-icon icon="ph:heart-straight-thin"></iconify-icon></li>
+                        <li><iconify-icon icon="mdi:star-three-points-outline"></iconify-icon></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="amtrBox">
+                <figure>
+                    <img src="../image/amt3.jpg" alt="dessin amateur Mangakas">
+                </figure>
+                <div class="lastPost_icon">
+                    <ul>
+                        <li><iconify-icon icon="ph:heart-straight-thin"></iconify-icon></li>
+                        <li><iconify-icon icon="mdi:star-three-points-outline"></iconify-icon></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="amtrBox">
+                <figure>
+                    <img src="../image/amt4.jpg" alt="dessin amateur Mangakas">
+                </figure>
+                <div class="lastPost_icon">
+                    <ul>
+                        <li><iconify-icon icon="ph:heart-straight-thin"></iconify-icon></li>
+                        <li><iconify-icon icon="mdi:star-three-points-outline"></iconify-icon></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="amtrBox">
+                <figure>
+                    <img src="../image/amt5.jpg" alt="dessin amateur Mangakas">
+                </figure>
+                <div class="lastPost_icon">
+                    <ul>
+                        <li><iconify-icon icon="ph:heart-straight-thin"></iconify-icon></li>
+                        <li><iconify-icon icon="mdi:star-three-points-outline"></iconify-icon></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="amtrBox">
+                <figure>
+                    <img src="../image/amt6.jpg" alt="dessin amateur Mangakas">
+                </figure>
+                <div class="lastPost_icon">
+                    <ul>
+                        <li><iconify-icon icon="ph:heart-straight-thin"></iconify-icon></li>
+                        <li><iconify-icon icon="mdi:star-three-points-outline"></iconify-icon></li>
+                    </ul>
+                </div>
+            </div>
+         </div>
+         
+        <!-- les nouveau mangas professionnels qui sont sorti, en cliquant sur l'image on peut accder à la sacn correspondante sur JapScan
+            Nouveauté de la  semaine -->
+            <h3>Nouveauté de la semaine</h3>
+        <div>
+            <div class="amtrBox">
+                <figure>
+                    <a href="https://www.japscan.me/lecture-en-ligne/blue-lock/197/"><img src="../image/bluelock.jpg" alt="ISAGI de blue lock"></a>
+                </figure>
+                <div class="lastPost_icon">
+                    <ul>
+                        <li><iconify-icon icon="ph:heart-straight-thin"></iconify-icon></li>
+                        <li><iconify-icon icon="mdi:star-three-points-outline"></iconify-icon></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="amtrBox">
+                <figure>
+                    <a href="https://www.japscan.me/lecture-en-ligne/bleach/686.5/"><img src="../image/bleach.jpg" alt="ICHIGO DE bleach"></a>
+                </figure>
+                <div class="lastPost_icon">
+                    <ul>
+                        <li><iconify-icon icon="ph:heart-straight-thin"></iconify-icon></li>
+                        <li><iconify-icon icon="mdi:star-three-points-outline"></iconify-icon></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="amtrBox">
+                <figure>
+                    <a href="https://www.japscan.me/lecture-en-ligne/vinland-saga/198/"><img src="../image/vsaga.jpg" alt="affiche de vinland saga"></a>
+                </figure>
+                <div class="lastPost_icon">
+                    <ul>
+                        <li><iconify-icon icon="ph:heart-straight-thin"></iconify-icon></li>
+                        <li><iconify-icon icon="mdi:star-three-points-outline"></iconify-icon></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="amtrBox">
+                <figure>
+                    <a href="https://www.japscan.me/lecture-en-ligne/one-piece/1067/1.html"><img src="../image/onePiece.jpg" alt="affiche de one piece"></a>
+                </figure>
+                <div class="lastPost_icon">
+                    <ul>
+                        <li><iconify-icon icon="ph:heart-straight-thin"></iconify-icon></li>
+                        <li><iconify-icon icon="mdi:star-three-points-outline"></iconify-icon></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="amtrBox">
+                <figure>
+                    <a href="https://www.japscan.me/lecture-en-ligne/shuumatsu-no-valkyrie/72/"><img src="../image/shuumatsu-no-valkyrie.jpg" alt="affiche de shuumatsu-no-valkyrie"></a>
+                </figure>
+                <div class="lastPost_icon">
+                    <ul>
+                        <li><iconify-icon icon="ph:heart-straight-thin"></iconify-icon></li>
+                        <li><iconify-icon icon="mdi:star-three-points-outline"></iconify-icon></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="amtrBox">
+                <figure>
+                    <a href="https://www.japscan.me/lecture-en-ligne/chainsaw-man/112/"><img src="../image/chainsawman.jpg" alt="affiche de chainsaw-man"></a>
+                </figure>
+                <div class="lastPost_icon">
+                    <ul>
+                        <li><iconify-icon icon="ph:heart-straight-thin"></iconify-icon></li>
+                        <li><iconify-icon icon="mdi:star-three-points-outline"></iconify-icon></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <div>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3 ... </li>
+            </ul>
+        </div>
+    </section>
+    
+    <footer id="foot">
+        <h5>&copy;Tweakit</h5>
+        <p><strong>DWWM</strong> <time datetime="05/12/22"> 05/12/22</time> </p>
+        <ul>
+            <li><a href="https://twitter.com/?lang=fr"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://stackoverflow.com/"><i class="fa-brands fa-stack-overflow"></i></a></li>
+            <li><a href="https://www.instagram.com/?hl=fr"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://github.com/CISSE07"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+    </footer>
+    
+</body>
+</html>
